@@ -1,0 +1,13 @@
+one:
+  language: MyString
+  origin: MyString
+  translation: MyString
+  hits: 1
+  misses: 1
+
+two:
+  language: MyString
+  origin: MyString
+  translation: MyString
+  hits: 1
+  misses: 1

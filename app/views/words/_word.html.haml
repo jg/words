@@ -1,0 +1,9 @@
+%tr{ :id => "word_#{word.id}"}
+  %td=h word.language 
+  %td=h word.origin 
+  %td=h word.translation 
+  %td=h word.hits 
+  %td=h word.misses 
+  %td= link_to "Show", word 
+  %td= link_to "Edit", edit_word_path(word) 
+  %td= link_to_remote "Destroy", :method => "delete", :url => { :action => 'destroy', :id => word.id}

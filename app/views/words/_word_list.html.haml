@@ -1,0 +1,8 @@
+%table{ :id => 'words'}
+  %tr
+    %th Language
+    %th Origin
+    %th Translation
+    %th Hits
+    %th Misses
+    = render :partial => 'word', :collection => @words, :as => 'word'

@@ -1,0 +1,6 @@
+if ($('#flash_notice').length) {
+    $('#flash_notice').html('<%= escape_javascript(flash[:notice]) %>');
+}else {
+    $('#words').before("<div id='flash_notice'><%= escape_javascript(flash[:notice]) %></div>");
+}
+$('#words').append("<%= escape_javascript(render(:partial => @word)) %>");

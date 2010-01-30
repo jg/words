@@ -1,0 +1,13 @@
+- form_for @word do |f| 
+  = f.error_messages 
+  %p
+    = f.label :origin 
+    = f.text_field :origin 
+  %p
+    = f.label :translation 
+    = f.text_field :translation 
+  %p
+    = f.label :language 
+    = f.select :language, ['en', 'de'], :selected => 'de'
+  %p
+    = f.submit "Submit" 
